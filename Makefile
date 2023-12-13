@@ -9,10 +9,10 @@
 CC=gcc
 CFLAGS=-O -Wall
 
-all: sl
+all: fast-sl
 
-sl: sl.c sl.h
-	$(CC) $(CFLAGS) -o sl sl.c -lncurses
+fast-sl: fast-sl.c fast-sl.h
+	$(CC) $(CFLAGS) -o fast-sl fast-sl.c -lncurses
 
 clean:
 	rm -f sl
